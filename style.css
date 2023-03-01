@@ -1,0 +1,163 @@
+/* || General setup */
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;
+    background-color:  #06e211;
+  background: url("rua.png");
+  }
+  
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  /* || typography */
+  
+  h1, h2, h3 {
+    font-family: 'engraverstv';
+    color:  #838ae2;
+  }
+  
+  p, input, li {
+    font-family: 'arial';
+    color: #131413;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgb(41, 184, 89);
+  }
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
+  p, li {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* || header layout */
+  
+  nav, article, aside, footer {
+    background-color: white;
+    padding: 1%;
+  }
+  
+  nav {
+    height: 50px;
+    background-color: #4a55f3;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+  
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+  
+  nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(17, 16, 16);
+  }
+    
+  input {
+    font-size: 1.6rem;
+    height: 32px;
+  }
+  
+  input[type="search"] {
+    flex: 3;
+  }
+  
+  input[type="submit"] {
+    flex: 1;
+    margin-left: 1rem;
+    background: #0e0d0d;
+    border: 0;
+    color: white;
+  }
+  main {
+    display: flex;
+
+  }
+  
+  article {
+    flex: 4;
+  }
+    
+  footer {
+    margin-top: 10px;
+  }
+
+  .sidebar {
+	background-color: #333;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 200px;
+	color: #fff;
+}
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.sidebar li {
+	padding: 10px;
+}
+.sidebar li:hover {
+	background-color: #39d3ee;
+}
+.sidebar a {
+	color: #fff;
+	text-decoration: none;
+}
+.botao-fixado {
+
+  position: fixed;
+  
+  bottom: 20px;
+  
+  left: 20px;
+  
+  }
+  .dark-mode {
+    background-color: black;
+    color:white;
+    
+}
+
+body {
+  padding:25px;
+  background-color: rgb(129, 187, 241);
+  color: rgb(33, 136, 204);
+  font-size: 25px;
+}
+img{
+  width: 100px;
+}

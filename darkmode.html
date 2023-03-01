@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina escura</title>
+    <style>
+        body {
+            padding:25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        .dark-mode{
+            background-color: black;
+            color:white;
+        }
+        .light-mode {
+            background-color: white;
+            color:black;
+        }
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>  
+   <h1>usando o modo escuro</h1>
+   <p>
+    este é um exemplo de utilização do modo escuro em uma página web.
+    site em modo escuro usando HTML,CSS e javascript.
+   </p>
+    <img src="https://cdn-icons-png.flaticon.com/512/5558/5558226.png" onclick="darkMode()"/>
+
+    <h3 id="DarkModetext">o modo escuro esta desativado</h3>
+    <button onclick="darkMode()">modo escuro</button>
+    <button onclick="lightMode()">modo claro</button>    
+
+    
+</body>
+</html>
+    <script>
+        let minhaImagem = document.querySelector('img');
+        function darkMode() {
+          var element = document.body;
+          var content = document.getElementById("DarkModetext");
+          element.className = "dark-mode";
+          content.innerText = "o modo escuro está ativado";
+          let meuScr = minhaImagem.getAttribute('src');
+          minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5262/5262027.png');
+        }
+        function lightMode(){
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "o modo escuro está desativado";
+            let meuScr = minhaImagem.getAttribute('src');
+            minhaImagem.setAttribute ('src','https://cdn-icons-png.flaticon.com/512/5558/5558226.png');
+        }
+    </script>
+    </body>
+    </html>
